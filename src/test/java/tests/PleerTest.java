@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class PleerTest {
     @Test
-    void selenidePleerTests()    {
+    void selenidePleerTest()    {
         Configuration. holdBrowserOpen = true;
 //открыть
         open("https://www.pleer.ru/");

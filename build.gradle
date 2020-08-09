@@ -25,13 +25,13 @@ task google_tests (type: Test) {
     }
 }
 
-task pleer_test (type: Test) {
+task pleer_tests (type: Test) {
     useJUnitPlatform {
         includeTags 'pleer_test'
     }
 }
 
-task alfabank_test (type: Test) {
+task alfabank_tests (type: Test) {
     useJUnitPlatform {
         includeTags 'alfabank_test'
     }
