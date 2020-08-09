@@ -25,25 +25,8 @@ task google_tests (type: Test) {
     }
 }
 
-task yandex_tests (type: Test) {
+task leroy_test (type: Test) {
     useJUnitPlatform {
-        includeTags 'yandex_tests'
-    }
-}
-
-task google_test_lesson2 (type: Test) {
-    useJUnitPlatform {
-        includeTags 'google_Test_Lesson2'
-    }
-}
-task google_test_l2t2 (type: Test) {
-    useJUnitPlatform {
-        includeTags 'google_Test_l2t2'
-    }
-}
-
-task l2t3 (type: Test) {
-    useJUnitPlatform {
-        includeTags 'l2t3'
+        includeTags 'pleer_test'
     }
 }
