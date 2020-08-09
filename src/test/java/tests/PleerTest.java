@@ -22,7 +22,7 @@ public class PleerTest {
 //поиск
         $(byName("text")).setValue("шуруповерт").pressEnter();
 //выбор товара
-        $(byId("list_items")).shouldHave(text("makita")).click();
+        $(byId("list_items")).getValue("makita").click();
 //добавить в корзину
 
 

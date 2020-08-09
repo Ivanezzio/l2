@@ -30,3 +30,9 @@ task leroy_test (type: Test) {
         includeTags 'pleer_test'
     }
 }
+
+task leroy_test (type: Test) {
+    useJUnitPlatform {
+        includeTags 'tinkoff_tests'
+    }
+}
