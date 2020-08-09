@@ -6,10 +6,8 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byId;
-import static com.codeborne.selenide.Selectors.byName;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selectors.*;
+import static com.codeborne.selenide.Selenide.*;
 
 @Tag("pleer_test")
 
@@ -22,9 +20,9 @@ public class PleerTest {
 //поиск
         $(byName("text")).setValue("шуруповерт").pressEnter();
 //выбор товара
-       // $(byId("list_items")).getValue("makita").click();
+        $(byId("list_items")).$(withText("Makita")).click();
 //добавить в корзину
-
+       // $(byId("flex_1")).$(byText("Купить")).click();
 
 
     }

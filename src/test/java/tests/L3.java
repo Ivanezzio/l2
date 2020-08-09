@@ -19,7 +19,7 @@ public class L3 {
         open("https://alfabank.ru");
         $(byText("Вклады")).click();
         $$(byText("Депозиты")).find(visible).click();
-        //$(byText("Архивные счета")).click();
+        $(byText("Архивные депозиты")).click();
 }
 
 
