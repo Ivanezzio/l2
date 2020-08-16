@@ -26,9 +26,9 @@ public class PleerTest {
 
         $(byText("Купить")).click();//добавить в корзину
 
-        $(byClassName("buy_button_small pie buy_button_small_b2")).click();//перейти в корзину
+        $(".product_price_color2").click();//перейти в корзину
 
-        $(byId("cart_items_t")).shouldHave(text("Makita")); // проверить наличие товара
+        $(".cart_items_t").shouldHave(text("Makita")); // проверить наличие товара
 
 
     }
