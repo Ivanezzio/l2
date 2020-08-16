@@ -14,15 +14,21 @@ import static com.codeborne.selenide.Selenide.*;
 public class PleerTest {
     @Test
     void selenidePleerTest()    {
-        Configuration. holdBrowserOpen = true;
-//открыть
-        open("https://www.pleer.ru/");
-//поиск
+        Configuration. holdBrowserOpen = true; //открыть
+
+        open("https://www.pleer.ru/"); //поиск
+
         $(byName("text")).setValue("шуруповерт").pressEnter();
-//выбор товара
-        $(byId("list_items")).$(withText("Makita")).click();
-//добавить в корзину
-       // $(byId("flex_1")).$(byText("Купить")).click();
+
+        $(byId("list_items")).$(withText("Makita")).click(); //выбор товара
+
+        switchTo().window(1);
+
+        $(byText("Купить")).click();//добавить в корзину
+
+        $(byClassName("buy_button_small pie buy_button_small_b2")).click();//перейти в корзину
+
+        $(byId("cart_items_t")).shouldHave(text("Makita")); // проверить наличие товара
 
 
     }
