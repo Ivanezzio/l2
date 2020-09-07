@@ -36,3 +36,9 @@ task alfabank_tests (type: Test) {
         includeTags 'alfabank_test'
     }
 }
+
+task sushi_tests (type: Test) {
+    useJUnitPlatform {
+        includeTags 'sushi_tests'
+    }
+}
